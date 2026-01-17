@@ -65,7 +65,7 @@ button {
 }
 
 .hero {
-  background-image: url("images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   background-size: cover;
   height: 707px;
   color: white;
