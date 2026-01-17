@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Nunito Sans, Arial;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1256px;
+  margin: 0 auto;
+  border: 0;
+}
+
+button {
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  outline: 0;
+  border: 0;
+  padding: 13px 33px;
+  color: white;
+  font-size: 11px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.logo {
+  color: #e3b873;
+}
+
+.header {
+  background-color: black;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  height: 83px;
+  align-items: center;
+  font-size: 11px;
+}
+
+.header-navigation {
+  list-style: none;
+  display: flex;
+}
+
+.header-navigation__item {
+  margin-right: 47px;
+}
+
+.header-navigation__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-navigation__item:first-child a {
+  color: #e3b873;
+}
+
+.phone {
+  color: #e3b873;
+}
+
+.hero {
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  height: 707px;
+  color: white;
+  position: relative;
+  padding: 194px 630px 208px 134px;
+}
+
+.hero-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+  width: 676px;
+}
+
+.title {
+  margin: 0;
+  font-family: "Yeseva One", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.gold-text {
+  color: #e3b873;
+}
+
+.hero-container p {
+  width: 504px;
+  margin: 19px 0 41px 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 164%;
+  letter-spacing: 0;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.hero-buttons .button {
+  margin-right: 20px;
+}
+
+.hero-buttons .button:last-child {
+  background: transparent;
+  border: 1px solid white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding: 12px 32px;
+}
