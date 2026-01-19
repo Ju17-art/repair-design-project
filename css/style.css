@@ -21,9 +21,9 @@ button {
   border: 0;
   padding: 13px 33px;
   color: white;
-  font-size: 11px;
   font-style: italic;
   text-transform: uppercase;
+  font-size: 11px;
 }
 
 .logo {
@@ -56,21 +56,22 @@ button {
   color: white;
 }
 
-.header-navigation__item:first-child a {
+.header-navigation__item a.active {
   color: #e3b873;
 }
 
 .phone {
   color: #e3b873;
+  text-decoration: underline;
 }
 
 .hero {
   background-image: url("../images/hero.jpg");
   background-size: cover;
   height: 707px;
-  color: white;
   position: relative;
-  padding: 194px 630px 208px 134px;
+  padding-top: 194px;
+  padding-right: auto;
 }
 
 .hero-overlay {
@@ -86,7 +87,7 @@ button {
 .hero-container {
   position: relative;
   z-index: 1;
-  width: 676px;
+  padding-left: 42px;
 }
 
 .title {
@@ -105,7 +106,8 @@ button {
 }
 
 .hero-container p {
-  width: 504px;
+  max-width: 504px;
+  width: 100%;
   margin: 19px 0 41px 0;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
