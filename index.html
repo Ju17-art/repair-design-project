@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="container header-content">
-        <div class="logo">IC "Repair Design Project"</div>
+        <span class="logo">IC "Repair Design Project"</span>
 
         <nav>
           <ul class="header-navigation">
@@ -44,6 +44,86 @@
           </div>
         </div>
         <div class="hero-overlay"></div>
+      </section>
+      <!-- Конец 1 секции -->
+      <!-- Секция Completed Projects -->
+      <section class="completed-projects">
+        <div class="container">
+          <!-- Навигация по проектам (статичная, только визуал) -->
+
+          <div class="projects-navigation">
+            <a href="#" class="project-tab active">Rostov-on-Don, Admiral</a>
+            <a href="#" class="project-tab">Sochi Thieves</a>
+            <a href="#" class="project-tab">Rostov-on-Don Patriotic</a>
+          </div>
+
+          <div class="projects-content">
+            <!-- ЛЕВАЯ КОЛОНКА - Информация о проекте -->
+            <div class="project-info">
+              <h2 class="project-title">
+                COMPLETED <br />
+                PROJECTS
+              </h2>
+
+              <p class="project-description">
+                Only a small part of the work performed by our company is
+                presented on the site. For 14 years in the construction market,
+                we have made happy more than 1000 families.
+              </p>
+
+              <!-- Детали проекта -->
+              <div class="project-details">
+                <div class="detail-item">
+                  <h3 class="detail-title">CITY:</h3>
+                  <p class="detail-value">Rostov-on-Don <br />LCD admiral</p>
+                </div>
+
+                <div class="detail-item">
+                  <h3 class="detail-title">APARTMENT AREA:</h3>
+                  <p class="detail-value">81 m2</p>
+                </div>
+
+                <div class="detail-item">
+                  <h3 class="detail-title">REPAIR TIME:</h3>
+                  <p class="detail-value">3.5 months</p>
+                </div>
+
+                <div class="detail-item">
+                  <h3 class="detail-title">REPAIR COST:</h3>
+                  <p class="detail-value">Upon request</p>
+                </div>
+              </div>
+
+              <!-- Навигация слайдера (статичная имитация) -->
+              <div class="slider-controls">
+                <img
+                  src="icons/left-arrow.svg"
+                  alt="Previous"
+                  class="slider-arrow"
+                />
+
+                <div class="slider-dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+
+                <img
+                  src="icons/right-arrow.svg"
+                  alt="Next"
+                  class="slider-arrow"
+                />
+              </div>
+            </div>
+
+            <!-- Правая колонка с картинкой -->
+            <div class="project-image-wrapper">
+              <div class="project-image">
+                <img src="images/c-projects.jpg" alt="Completed project" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
