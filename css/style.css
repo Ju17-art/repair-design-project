@@ -136,8 +136,9 @@ button {
 /* === Секция Completed Projects === */
 .completed-projects {
   background-color: #131313;
-  padding: 107px 0;
+  padding: 107px 0 0 0;
   color: #fff;
+  height: 1074px;
 }
 
 .project-right {
@@ -151,6 +152,7 @@ button {
   display: flex;
   gap: 60px;
   margin-bottom: 45px;
+  justify-content: flex-end;
 }
 
 .project-tab {
@@ -275,7 +277,7 @@ button {
   background-color: #fff;
 }
 
-/* Правая колонка - изображение с абсолютным позиционированием */
+/* Правая колонка - изображение */
 .project-image-wrapper {
   flex: 1;
 }
@@ -288,4 +290,177 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* === Секция Online Control === */
+
+.o-control {
+  padding: 0;
+  color: #fff;
+  margin-top: -324px;
+}
+
+.control {
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.kamera {
+  display: block;
+  margin: 12px auto 31px auto;
+}
+
+.video {
+  text-align: center;
+}
+
+.videoplay img {
+  filter: brightness(20%);
+}
+
+.play-button {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  margin-top: -286px;
+}
+
+.trait {
+  height: 2px;
+  width: 55px;
+  border: none;
+  background-color: #e3b873;
+  margin: 230px auto 34px auto;
+}
+
+.online-control p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  color: #363636;
+  margin-bottom: 92px;
+  margin-top: 34px;
+}
+
+.section_input {
+  margin-left: 123px;
+}
+
+.section_input {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "name tel submit"
+    "checkbox checkbox checkbox";
+  grid-column-gap: 58px;
+  grid-row-gap: 37px;
+  width: 285px;
+  padding-left: 300px;
+}
+
+.name {
+  grid-area: name;
+}
+
+.tel {
+  grid-area: tel;
+}
+
+.b-in {
+  grid-area: submit;
+}
+
+.one-checkbox {
+  display: flex;
+  grid-area: checkbox;
+  justify-content: center;
+}
+
+.input {
+  border-style: none none solid none;
+  border-color: #363636;
+  border-width: 1px;
+  width: 231px;
+}
+
+.form {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.input::placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #363636;
+}
+
+.button-input {
+  font-size: 13px;
+  line-height: 27px;
+  padding: 11px 75px;
+  font-style: normal;
+  width: 200px;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+
+.real-checkbox {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  background: #e3b873;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.real-checkbox::before {
+  opacity: 0;
+  transition: 0.2s;
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -4px; /* Корректировка по вертикали */
+}
+
+.checkbox:checked + .real-checkbox::before {
+  opacity: 1;
+}
+
+.text_checkbox {
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 163.68%;
+  color: #181818;
 }
