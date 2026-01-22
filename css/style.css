@@ -230,7 +230,7 @@ button {
 .detail-title {
   font-family: "Yeseva One", serif;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 139%;
   text-transform: uppercase;
   color: #e3b873;
   margin: 0 0 9px 0;
@@ -314,7 +314,7 @@ button {
 
 .kamera {
   display: block;
-  margin: 12px auto 31px auto;
+  margin: 13px auto 31px auto;
 }
 
 .video {
@@ -463,4 +463,111 @@ button {
   font-size: 14px;
   line-height: 163.68%;
   color: #181818;
+}
+
+.types-of-repair {
+  padding: 0;
+  color: #fff;
+  margin-top: 148px;
+}
+
+.tor-title {
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 139%px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  margin-top: 0;
+}
+
+.instrument-icon {
+  display: block;
+  margin: 13px auto 31px auto;
+}
+
+.main-repair-all-blocks {
+  margin-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  height: 608px;
+}
+
+.block-redecorating {
+  max-width: 392px;
+  height: 421px;
+  padding-left: 31px;
+  padding-right: 31px;
+  background: center no-repeat url("/images/redecorating.png");
+  background-size: cover;
+}
+
+.main-repair-content {
+  width: 330px;
+  height: 286px;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  margin-top: 294px;
+  color: #959595;
+  padding-left: 34px;
+}
+
+.main-repair-content ul {
+  padding-left: 0px;
+  height: 178px;
+}
+
+.main-repair__h4 {
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%px;
+  text-align: left;
+  color: #363636;
+  padding-top: 25px;
+  margin-bottom: 13px;
+}
+
+.main-repair__li {
+  font-size: 13px;
+  list-style: none;
+  line-height: 27px;
+}
+
+.main-repair__price {
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  z-index: 10;
+  bottom: 0px;
+  position: relative;
+  left: -34px;
+  border-radius: 0px;
+}
+
+.block-overhaul {
+  max-width: 392px;
+  height: 421px;
+  padding-left: 31px;
+  padding-right: 31px;
+  background: center no-repeat url("/images/overhaul.png");
+  background-size: cover;
+}
+
+.block-designer-repair {
+  max-width: 392px;
+  height: 421px;
+  padding-left: 31px;
+  padding-right: 31px;
+  background: center no-repeat url("/images/designer-repair.png");
+  background-size: cover;
 }
