@@ -500,7 +500,7 @@ button {
   height: 421px;
   padding-left: 31px;
   padding-right: 31px;
-  background: center no-repeat url("/images/redecorating.png");
+  background: center no-repeat url("../images/redecorating.png");
   background-size: cover;
 }
 
@@ -559,7 +559,7 @@ button {
   height: 421px;
   padding-left: 31px;
   padding-right: 31px;
-  background: center no-repeat url("/images/overhaul.png");
+  background: center no-repeat url("../images/overhaul.png");
   background-size: cover;
 }
 
@@ -568,6 +568,6 @@ button {
   height: 421px;
   padding-left: 31px;
   padding-right: 31px;
-  background: center no-repeat url("/images/designer-repair.png");
+  background: center no-repeat url("../images/designer-repair.png");
   background-size: cover;
 }
