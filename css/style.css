@@ -457,13 +457,15 @@ button {
 }
 
 .text_checkbox {
-  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 163.68%;
   color: #181818;
 }
+
+/* Секция 4 Types Of Repair */
 
 .types-of-repair {
   padding: 0;
@@ -570,4 +572,241 @@ button {
   padding-right: 31px;
   background: center no-repeat url("../images/designer-repair.png");
   background-size: cover;
+}
+
+/* Секция 5 Measure */
+.measure {
+  padding: 0;
+  background: left top / auto no-repeat url("../images/measure-image.png");
+  margin-top: 124px;
+  height: 726px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.measure .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.measure-left-block {
+  padding-top: 117px;
+  height: 645px;
+}
+
+.measure__list {
+  margin: 0;
+  padding-left: 249px;
+  height: 473px;
+}
+
+.measure__list li {
+  position: relative;
+  margin-bottom: 114px;
+  list-style-type: none;
+  padding-left: 59px;
+  color: #363636;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.4;
+  min-height: 14px;
+}
+
+.measure__list li:last-child {
+  margin-bottom: 0px;
+}
+
+/* Внешний цветной круг */
+.measure__list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  background-color: #e3b873;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* Белый бордер вокруг круга (имитация двойного круга) */
+.measure__list li:after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 58px;
+  height: 58px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15); /* тень x 0, y 5, blur 15, цвет #E3B873 15% */
+  z-index: 1;
+}
+
+/* Цифры внутри круга */
+.measure__list li .number {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Yeseva One", serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  z-index: 2;
+}
+
+.measure-right-block {
+  margin-top: 106px;
+  background-color: #131313;
+  height: 509px;
+  width: 506px;
+}
+
+.form-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 143%;
+  color: #ffffff;
+  height: 47px;
+  margin-top: 28px;
+  text-align: center;
+}
+
+.measure-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 39px;
+  margin-left: 49px;
+  width: 408px;
+}
+
+.input2-1,
+.input2-2,
+.input2-3 {
+  background-color: #131313;
+  border-style: none none solid none;
+  border-color: rgba(255, 255, 255, 0.15);
+  border-width: 1px;
+  width: 408px;
+  padding-bottom: 2px;
+}
+
+.input2-1,
+.input2-2 {
+  margin-bottom: 48px;
+}
+
+.input2-3 {
+  margin-bottom: 16px;
+}
+
+.form2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 164%;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 7px;
+}
+
+.input2-1::placeholder,
+.input2-2::placeholder,
+.input2-3::placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 164%;
+  color: #ffffff;
+}
+
+.text_checkbox2 {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 164%;
+  color: #ffffff;
+  margin-top: -22px;
+  width: 260px;
+}
+
+.marg {
+  margin-left: 73px;
+}
+
+.label2 {
+  margin-left: 49px;
+}
+
+.measure .button {
+  font-style: normal;
+  border-radius: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 164%;
+  margin-left: 244px;
+  margin-top: 39px;
+}
+
+.pig {
+  display: flex;
+  align-items: center;
+  margin-top: 66px;
+  padding-left: 49px;
+  height: 72px;
+}
+
+.pig-circle {
+  width: 72px;
+  height: 72px;
+  background-color: #e3b873;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.2);
+}
+
+.pig-icon {
+  width: 40px;
+  height: 33px;
+  background-image: url("../icons/pig.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.pig-text {
+  margin-left: 25px; /* Отступ от круга */
+}
+
+.pig-text p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #e3b873;
+  line-height: 143%;
+  margin: 0;
 }
