@@ -68,6 +68,8 @@ button {
   text-decoration: underline;
 }
 
+/* === Секция 1 Hero === */
+
 .hero {
   background-image: url("../images/hero.jpg");
   background-size: cover;
@@ -133,7 +135,7 @@ button {
   padding: 12px 32px;
 }
 
-/* === Секция Completed Projects === */
+/* === Секция 2 Completed Projects === */
 .completed-projects {
   background-color: #131313;
   padding: 107px 0 0 0;
@@ -147,7 +149,7 @@ button {
   flex-direction: column;
 }
 
-/* Навигация по проектам (только визуал) */
+/* Навигация по проектам */
 .projects-navigation {
   display: flex;
   gap: 60px;
@@ -192,7 +194,7 @@ button {
 
 /* Левая колонка - информация */
 .project-info {
-  max-width: 442px; /* Максимум, но может быть меньше */
+  max-width: 442px;
   padding-left: 42px;
 }
 
@@ -244,7 +246,7 @@ button {
   margin: 0;
 }
 
-/* Навигация слайдера (имитация) */
+/* Навигация слайдера */
 .slider-controls {
   display: flex;
   align-items: center;
@@ -277,7 +279,7 @@ button {
   background-color: #fff;
 }
 
-/* Правая колонка - изображение */
+/* Правая колонка - слайдер */
 .project-image-wrapper {
   flex: 1;
 }
@@ -292,7 +294,7 @@ button {
   object-fit: cover;
 }
 
-/* === Секция Online Control === */
+/* === Секция 3 Online Control === */
 
 .o-control {
   padding: 0;
@@ -544,7 +546,7 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 139%px;
+  line-height: 139%;
   text-align: left;
   text-transform: uppercase;
   color: #ffffff;
@@ -618,7 +620,7 @@ button {
   margin-bottom: 0px;
 }
 
-/* Внешний цветной круг */
+/* Желтый круг */
 .measure__list li:before {
   content: "";
   position: absolute;
@@ -809,4 +811,294 @@ button {
   color: #e3b873;
   line-height: 143%;
   margin: 0;
+}
+
+/* Секция 6 Fantasies */
+
+.fantasies {
+  position: relative;
+  padding: 0;
+  background: no-repeat center / cover url("../images/fantasies-background.png");
+  margin-top: 242px;
+  height: 864px;
+  overflow: visible;
+}
+
+.f-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  z-index: 1;
+}
+
+.fantasies .container {
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.fantasies-nav {
+  height: 629px;
+  padding-top: 137px;
+}
+
+.fantasies-h2 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #e3b873;
+  line-height: 139%;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 47px;
+}
+
+.fantasies-links {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.fantasies-links li {
+  margin-bottom: 23px;
+}
+
+.fantasies-links li a {
+  font-family: "Nunito sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.fantasies-links li a.active-btn {
+  display: inline-block;
+  border-bottom: 1px solid #e3b873;
+  font-family: "Nunito sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e3b873;
+  font-size: 20px;
+  line-height: 191%;
+}
+
+.fantasies-images {
+  display: flex;
+  gap: 43px;
+  z-index: 2;
+}
+
+.fantasies-column {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.fantasies-column:first-child {
+  margin-top: -40px;
+}
+
+.fantasies-column:last-child {
+  margin-top: -112px;
+}
+
+.fantasies-img {
+  display: block;
+  object-fit: cover;
+}
+
+/* Секция 7 Our Clients */
+
+.our-clients {
+  position: relative;
+  padding: 0;
+  color: #fff;
+  margin-top: 109px;
+  height: 997px;
+  z-index: 1;
+}
+
+.our-clients::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 776px;
+  opacity: 0.05;
+  z-index: 2;
+  background:
+    bottom left / auto no-repeat url("../images/clients-left.png"),
+    bottom right / auto no-repeat url("../images/clients-right.png");
+}
+
+.our-clients .container {
+  height: 642px;
+}
+
+.oc-title {
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 139%px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  padding-top: 0;
+}
+
+.hands-icon {
+  display: block;
+  margin: 13px auto 24px auto;
+}
+
+.main-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164%;
+  text-align: center;
+  color: #363636;
+  margin: 0 auto 39px auto;
+}
+
+.our-clients-all-blocks {
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  height: 455px;
+  z-index: 10;
+}
+
+.block-client {
+  position: relative;
+  max-width: 376px;
+  height: 428px;
+  padding-left: 20px;
+  padding-right: 31px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.client-header {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  gap: 20px;
+}
+
+.client-photo {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 20;
+}
+
+.client-photo .photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-clients__h4 {
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 127%;
+  text-align: left;
+  color: #181818;
+  margin: 0;
+}
+
+.block-client p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: left;
+  color: #959595;
+  padding-top: 39px;
+  margin: 0;
+}
+
+.info-btn-container {
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+}
+
+.info-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3b873;
+  border: none;
+  border-radius: 0px;
+  padding: 0 12px;
+  cursor: pointer;
+  gap: 20px;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  z-index: 10;
+}
+
+/* Группы: иконка + текст */
+.info-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Иконки */
+.info-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Текст */
+.info-text {
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 139%;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 10;
+  position: relative;
+  border-radius: 0px;
+  white-space: nowrap;
+}
+
+/* Вертикальная линия */
+.info-divider {
+  width: 1px;
+  height: 48px;
+  background-color: #ffffff;
+}
+
+.last {
+  position: relative;
+  margin-top: 0px;
+  height: 954px;
+  padding: 0;
+  background: no-repeat center / cover url("../images/last-image.jpg");
+  z-index: 1;
 }
