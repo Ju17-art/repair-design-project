@@ -926,7 +926,7 @@ button {
   padding: 0;
   color: #fff;
   margin-top: 109px;
-  height: 997px;
+  height: 996px;
   z-index: 1;
 }
 
@@ -1094,6 +1094,8 @@ button {
   background-color: #ffffff;
 }
 
+/* Секция 8 Last */
+
 .last {
   position: relative;
   margin-top: 0px;
@@ -1101,4 +1103,147 @@ button {
   padding: 0;
   background: no-repeat center / cover url("../images/last-image.jpg");
   z-index: 1;
+}
+
+.last-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 24, 24, 0.9) 3.47%,
+    rgba(24, 24, 24, 0.72) 100%
+  );
+}
+
+.last .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.last-form {
+  width: 883px;
+  height: 445px;
+  background: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -222px;
+}
+
+.last-form__h3 {
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 139%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.last_input_name_phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.input_last_1,
+.input_last_2,
+.input_last_3 {
+  background-color: #181818;
+  border-style: none none solid none;
+  border-color: rgba(255, 255, 255, 0.15);
+  border-width: 1px;
+  padding-bottom: 7px;
+}
+
+.input_last_1,
+.input_last_2 {
+  width: 231px;
+}
+
+.input_last_3 {
+  width: 517px;
+}
+
+.last-name {
+  margin-right: 54px;
+}
+
+.input_last_1::placeholder,
+.input_last_2::placeholder,
+.input_last_3::placeholder {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.label_last {
+  margin-top: 48px;
+  margin-bottom: 40px;
+}
+
+.question_last {
+  margin-top: 48px;
+}
+
+.marg2 {
+  margin-left: 22px;
+}
+
+.last .button {
+  border-radius: 0px;
+  line-height: 205%;
+}
+
+.last_adress {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.last-text-adress {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 139%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e3b873;
+  margin: 0px;
+  margin-left: 46px;
+}
+
+.last-adress {
+  width: 589px;
+  height: 51px;
+  margin-top: 52px;
+  margin-left: 172px;
+}
+
+.last-icon {
+  margin-top: 26px;
+  margin-bottom: 43px;
+  margin-left: 64px;
+}
+
+.last-mail {
+  margin-right: 15px;
+}
+
+.last_map {
+  margin-top: 100px;
 }
