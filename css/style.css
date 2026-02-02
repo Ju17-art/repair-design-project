@@ -149,7 +149,6 @@ button {
   flex-direction: column;
 }
 
-/* Навигация по проектам */
 .projects-navigation {
   display: flex;
   gap: 60px;
@@ -186,13 +185,11 @@ button {
   color: white;
 }
 
-/* Основной контент - две колонки */
 .projects-content {
   display: flex;
   gap: 50px;
 }
 
-/* Левая колонка - информация */
 .project-info {
   max-width: 442px;
   padding-left: 42px;
@@ -206,7 +203,7 @@ button {
   letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #e3b873;
-  margin: 0 0 34px 0; /* padding-top переносим в margin */
+  margin: 0 0 34px 0;
 }
 
 .project-description {
@@ -216,7 +213,6 @@ button {
   margin: 0 0 42px 0;
 }
 
-/* Детали проекта в виде сетки 2x2 */
 .project-details {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -246,7 +242,6 @@ button {
   margin: 0;
 }
 
-/* Навигация слайдера */
 .slider-controls {
   display: flex;
   align-items: center;
@@ -279,7 +274,6 @@ button {
   background-color: #fff;
 }
 
-/* Правая колонка - слайдер */
 .project-image-wrapper {
   flex: 1;
 }
@@ -353,10 +347,6 @@ button {
   color: #363636;
   margin-bottom: 92px;
   margin-top: 34px;
-}
-
-.section_input {
-  margin-left: 123px;
 }
 
 .section_input {
@@ -451,7 +441,7 @@ button {
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-  margin-top: -4px; /* Корректировка по вертикали */
+  margin-top: -4px;
 }
 
 .checkbox:checked + .real-checkbox::before {
@@ -620,7 +610,6 @@ button {
   margin-bottom: 0px;
 }
 
-/* Желтый круг */
 .measure__list li:before {
   content: "";
   position: absolute;
@@ -634,7 +623,6 @@ button {
   box-sizing: border-box;
 }
 
-/* Белый бордер вокруг круга (имитация двойного круга) */
 .measure__list li:after {
   content: "";
   position: absolute;
@@ -650,7 +638,6 @@ button {
   z-index: 1;
 }
 
-/* Цифры внутри круга */
 .measure__list li .number {
   position: absolute;
   left: 0;
@@ -722,7 +709,7 @@ button {
   font-size: 13px;
   line-height: 164%;
   color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 7px;
+  margin-bottom: 0px;
 }
 
 .input2-1::placeholder,
@@ -800,7 +787,7 @@ button {
 }
 
 .pig-text {
-  margin-left: 25px; /* Отступ от круга */
+  margin-left: 25px;
 }
 
 .pig-text p {
@@ -1059,20 +1046,17 @@ button {
   z-index: 10;
 }
 
-/* Группы: иконка + текст */
 .info-block {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-/* Иконки */
 .info-icon {
   width: 32px;
   height: 32px;
 }
 
-/* Текст */
 .info-text {
   font-family: "Yeseva One", serif;
   font-style: normal;
@@ -1087,7 +1071,6 @@ button {
   white-space: nowrap;
 }
 
-/* Вертикальная линия */
 .info-divider {
   width: 1px;
   height: 48px;
@@ -1208,14 +1191,16 @@ button {
   line-height: 205%;
 }
 
-.last_adress {
+.last-contacts {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 52px;
 }
 
 .last-text-adress {
-  font-family: "Yeseva One";
+  font-family: "Yeseva One", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1224,26 +1209,22 @@ button {
   text-transform: uppercase;
   color: #e3b873;
   margin: 0px;
-  margin-left: 46px;
 }
 
 .last-adress {
-  width: 589px;
-  height: 51px;
-  margin-top: 52px;
-  margin-left: 172px;
+  width: auto;
+  max-width: 589px;
+  text-align: center;
+  margin: 0;
 }
 
 .last-icon {
-  margin-top: 26px;
-  margin-bottom: 43px;
-  margin-left: 64px;
-}
-
-.last-mail {
-  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 26px 0;
 }
 
 .last_map {
-  margin-top: 100px;
+  margin-top: 43px;
 }
